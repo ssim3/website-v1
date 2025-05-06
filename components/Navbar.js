@@ -11,12 +11,20 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="m-auto flex justify-between items-center text-[#9A6138]">
-      <Link className="text-2xl font-bold" href="/">S3</Link>
+    <div className="m-auto flex items-center justify-between text-[#CC785C]">
+      <Link className="text-2xl font-bold" href="/">
+        S3
+      </Link>
       <ul className="flex gap-28 text-lg">
         {navItems.map((navItem, index) => (
           <li key={index}>
-            <Link href={navItem.link}>{navItem.name}</Link>
+            <Link
+              className="group transition-all duration-300 hover:font-medium"
+              href={navItem.link}
+            >
+              {navItem.name}
+              <span className="block h-0.5 max-w-0 bg-[#CC785C] transition-all duration-500 group-hover:max-w-full"></span>
+            </Link>
           </li>
         ))}
       </ul>
