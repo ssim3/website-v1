@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${leagueSpartan.className} px-20 py-10 antialiased`}>
+      <body className={`${leagueSpartan.className} antialiased`}>
         <Navbar />
         {children}
       </body>

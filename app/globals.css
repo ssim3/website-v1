@@ -2,7 +2,8 @@
 
 :root {
   --background: #fffef6;
-  --foreground: #262625;
+  --foreground: #40403E;
+  --main: #CC785C;
 }
 
 @theme inline {

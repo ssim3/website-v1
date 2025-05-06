@@ -11,7 +11,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="m-auto flex items-center justify-between text-[#CC785C]">
+    <div className="absolute top-0 left-0 w-full m-auto flex items-center justify-between px-20 py-10 z-100 text-[var(--foreground)]">
       <Link className="text-2xl font-bold" href="/">
         S3
       </Link>
@@ -23,7 +23,7 @@ const Navbar = () => {
               href={navItem.link}
             >
               {navItem.name}
-              <span className="block h-0.5 max-w-0 bg-[#CC785C] transition-all duration-500 group-hover:max-w-full"></span>
+              <span className="block h-0.5 max-w-0 bg-[var(--foreground)] transition-all duration-500 group-hover:max-w-full"></span>
             </Link>
           </li>
         ))}
