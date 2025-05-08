@@ -11,7 +11,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="absolute top-0 left-0 w-full m-auto flex items-center justify-between px-20 py-10 z-100 text-[var(--foreground)]">
+    <div className="z-100 m-auto flex w-full items-center justify-between px-20 py-10 text-[var(--foreground)]">
       <Link className="text-2xl font-bold" href="/">
         S3
       </Link>

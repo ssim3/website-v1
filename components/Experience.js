@@ -1,23 +1,15 @@
-import React from 'react'
+import React from "react";
 
 const Experience = () => {
-
   const experiences = [
-    { 
-        name: "National Environmental Agency",
-        
-    },
     {
-
+      name: "National Environmental Agency",
     },
-    {
+    {},
+    {},
+  ];
 
-    },
-  ]
-
-  return (
-    <div></div>
-  )
-}
+  return <div></div>;
+};
 
 export default Experience;
