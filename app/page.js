@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="m-auto flex max-w-5xl flex-col gap-50 px-10">
+      <div className="m-auto flex  flex-col gap-50 max-w-5xl px-10">
         <section
           id="hero"
           className="mt-30 flex items-center justify-center gap-20 max-sm:flex-col-reverse max-sm:gap-5"
@@ -35,6 +35,7 @@ export default function Home() {
           <div className="relative aspect-[527/457] flex-1">
             <Image src="/Hero.png" fill={true} alt="Hero Image" />
           </div>
+          <LineDraw />
         </section>
 
         <div className="m-auto flex max-w-3xl flex-col gap-5 border-l-4 border-l-[#666663] p-5">
@@ -58,8 +59,8 @@ export default function Home() {
           </p>
         </div>
 
-        <section>
-          <h1 className="text-4xl">Experience</h1>
+        <section className="flex items-center justify-center gap-5">
+          <h1 className="text-4xl flex-1 text-right">Experience</h1>
           <Experience />
         </section>
 
@@ -67,7 +68,6 @@ export default function Home() {
           <h1 className="text-4xl">Tech Stack</h1>
         </section>
       </div>
-      <LineDraw />
     </>
   );
 }

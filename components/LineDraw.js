@@ -9,13 +9,15 @@ import DrawSVGPlugin from "gsap/DrawSVGPlugin";
 gsap.registerPlugin(useGSAP); // register the hook to avoid React version discrepancies
 gsap.registerPlugin(DrawSVGPlugin);
 
-const LineDraw = () => {
+const LineDraw = (props) => {
   useGSAP(() => {
     gsap.from("#line", { duration: 1.5, drawSVG: 0 });
   });
 
   return (
-    <div className="absolute top-1/4 left-0 -z-100 w-full">
+    <div
+      className={`${props.display ? props.display : "absolute"} ${props.position ? props.position : "top-0"} -z-100 w-screen`}
+    >
       <svg
         width="100%"
         height="100%"
