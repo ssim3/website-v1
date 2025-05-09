@@ -5,6 +5,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Experience from "@/components/Experience";
+import Stack from "@/components/Stack";
 
 gsap.registerPlugin(useGSAP); // register the hook to avoid React version discrepancies
 
@@ -20,7 +21,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="m-auto flex  flex-col gap-50 max-w-5xl px-10">
+      <div className="m-auto flex max-w-5xl flex-col gap-50 px-10">
         <section
           id="hero"
           className="mt-30 flex items-center justify-center gap-20 max-sm:flex-col-reverse max-sm:gap-5"
@@ -60,12 +61,17 @@ export default function Home() {
         </div>
 
         <section className="">
-          <h1 className="text-4xl text-left">Experience</h1>
+          <h1 className="text-4xl">Experience</h1>
           <Experience />
         </section>
 
         <section>
           <h1 className="text-4xl">Tech Stack</h1>
+          <Stack />
+        </section>
+
+        <section>
+          <h1 className="text-4xl">Projects</h1>
         </section>
       </div>
     </>

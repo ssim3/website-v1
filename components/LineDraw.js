@@ -16,7 +16,7 @@ const LineDraw = (props) => {
 
   return (
     <div
-      className={`${props.display ? props.display : "absolute"} ${props.position ? props.position : "top-0"} -z-100 max-w-screen w-screen overflow-hidden`}
+      className={`${props.display ? props.display : "absolute"} ${props.position ? props.position : "top-0"} -z-100 w-screen max-w-screen overflow-hidden`}
     >
       <svg
         width="100%"
