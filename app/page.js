@@ -59,8 +59,8 @@ export default function Home() {
           </p>
         </div>
 
-        <section className="flex items-center justify-center gap-5">
-          <h1 className="text-4xl flex-1 text-right">Experience</h1>
+        <section className="">
+          <h1 className="text-4xl text-left">Experience</h1>
           <Experience />
         </section>
 

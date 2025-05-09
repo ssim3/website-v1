@@ -22,10 +22,10 @@ const Experience = () => {
   ];
 
   return (
-    <>
-      <div className="m-15 mb-0 flex flex-col gap-20 border-l-2 p-10">
+      <div className="m-10 p-5 flex grow flex-col gap-20 border-l-2">
         {experiences.map((experience, index) => (
-          <div key={index} className="flex items-center gap-10 p-5 rounded-3xl hover:text-[#FAFAF7] hover:bg-[#61AAF2] transition-all duration-300">
+          <div key={index} className="relative flex items-center gap-10 p-5">
+            <div className="absolute -left-4 top-0 h-4 w-4 rounded-full bg-[#61AAF2]"></div>
             <div className="flex flex-col gap-2 text-sm">
               <p>{experience.role}</p>
               <h3 className="text-2xl">{experience.name}</h3>
@@ -39,7 +39,6 @@ const Experience = () => {
           </div>
         ))}
       </div>
-    </>
   );
 };
 
