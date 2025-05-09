@@ -31,7 +31,7 @@ const Experience = () => {
             <p>{experience.period}</p>
           </div>
           <div>
-            <button className="cursor-pointer rounded-full duration-150 hover:bg-[#61AAF2]">
+            <button className="cursor-pointer rounded-full duration-150 hover:bg-[var(--main)]">
               <CircleArrowRight size={20} />
             </button>
           </div>

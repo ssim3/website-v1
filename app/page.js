@@ -73,6 +73,7 @@ export default function Home() {
         <section>
           <h1 className="text-4xl">Projects</h1>
         </section>
+
       </div>
     </>
   );
