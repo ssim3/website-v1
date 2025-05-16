@@ -38,6 +38,11 @@ const stacks = [
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
       },
       { name: "GSAP", image: "/techstack/gsap.png" },
+      {
+        name: "Wordpress",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg",
+      },
     ],
   },
   {
