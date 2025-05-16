@@ -6,7 +6,6 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Experience from "@/components/Experience";
 import Stack from "@/components/Stack";
-import Contact from "@/components/Contact";
 
 gsap.registerPlugin(useGSAP); // register the hook to avoid React version discrepancies
 
@@ -22,7 +21,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="m-auto mb-50 flex max-w-5xl flex-col gap-50 px-10">
+      <div className="m-auto flex max-w-5xl flex-col gap-50 px-10">
         <section
           id="hero"
           className="mt-30 flex items-center justify-center gap-20 max-sm:flex-col-reverse max-sm:gap-5"
@@ -75,18 +74,6 @@ export default function Home() {
           <h1 className="text-4xl">Projects</h1>
         </section>
 
-        <section className="flex flex-wrap items-center justify-between gap-20">
-          <div className="flex flex-1 flex-col gap-5">
-            <h1 className="text-4xl font-bold text-[var(--main)]">
-              Let's Talk!
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor o eiusmod tempor o eiusmod tempor.
-            </p>
-          </div>
-          <Contact />
-        </section>
       </div>
     </>
   );

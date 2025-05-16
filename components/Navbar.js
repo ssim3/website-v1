@@ -4,6 +4,7 @@ import React from "react";
 const Navbar = () => {
   // Hyperlinks
   const navItems = [
+    { name: "About", link: "/about" },
     { name: "Resume", link: "/resume" },
     { name: "Projects", link: "/projects" },
     { name: "Contact", link: "/contact" },
