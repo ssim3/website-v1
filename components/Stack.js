@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import stacks from "@/techstacks";
+import stacks from "@/data/techstacks";
 
 const Stack = () => {
   return (

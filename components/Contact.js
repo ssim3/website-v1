@@ -71,7 +71,7 @@ const Contact = () => {
           className="group m-auto mr-0 h-5 max-w-[200px] cursor-pointer transition-all duration-300 hover:text-[var(--main)]"
           type="submit"
         >
-          Submit Form
+          Submit
           <span className="block h-0.5 max-w-0 bg-[var(--main)] transition-all duration-500 group-hover:max-w-full"></span>
         </button>
       </form>
