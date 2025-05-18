@@ -1,44 +1,21 @@
-"use client";
-
 import LineDraw from "@/components/LineDraw";
 import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import Hero from "@/components/Hero"
 import Experience from "@/components/Experience";
 import Stack from "@/components/Stack";
 import Contact from "@/components/Contact";
+import Project from "@/components/Project";
 
-gsap.registerPlugin(useGSAP); // register the hook to avoid React version discrepancies
 
-export default function Home() {
-  useGSAP(() => {
-    gsap.from("#hero", {
-      y: 100,
-      opacity: 0,
-      duration: 1,
-      ease: "power2.out",
-    });
-  });
+const Home = () => {
 
   return (
     <>
       <div className="m-auto mb-50 flex max-w-5xl flex-col gap-50 px-10">
-        <section
-          id="hero"
-          className="mt-30 flex items-center justify-center gap-20 max-sm:flex-col-reverse max-sm:gap-5"
-        >
-          <div className="flex flex-1 flex-col gap-2.5">
-            <h1 className="text-6xl">Hi, I'm Tristan</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor o eiusmod tempor o eiusmod tempor.
-            </p>
-          </div>
-          <div className="relative aspect-[527/457] flex-1">
-            <Image src="/Hero.png" fill={true} alt="Hero Image" />
-          </div>
-          <LineDraw />
-        </section>
+
+        <Hero />
 
         <div className="m-auto flex max-w-3xl flex-col gap-5 border-l-4 border-l-[#666663] p-5">
           <p>
@@ -73,6 +50,7 @@ export default function Home() {
 
         <section>
           <h1 className="text-4xl">Projects</h1>
+          <Project />
         </section>
 
         <section className="flex flex-wrap items-center justify-between gap-20">
@@ -91,3 +69,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Home;

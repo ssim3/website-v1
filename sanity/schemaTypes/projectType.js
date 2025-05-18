@@ -19,6 +19,10 @@ export const projectType = defineType({
       },
     }),
     defineField({
+      name: "description",
+      type: "string",
+    }),
+    defineField({
       name: "mainImage",
       type: "image",
       options: {
