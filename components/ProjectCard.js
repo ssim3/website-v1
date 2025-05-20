@@ -1,30 +1,34 @@
-import Image from 'next/image';
-import React from 'react'
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import React from "react";
 
 const ProjectCard = (props) => {
-
-  console.log(props);
-
   const { id, title, description, image } = props;
 
-  console.log(image);
-
   return (
-    <div className="mt-10 relative group">
-      <div className="relative h-48 max-w-72 m-auto overflow-hidden rounded-3xl">
-        <Image
-          src={image}
-          layout="fill"
-          objectFit="cover"
-          alt={title}
-        />
-        <div className="absolute inset-0 bg-black opacity-50 flex items-center justify-center">
-          <h1 className="text-white text-xl font-bold">{title}</h1>
-        </div>
+    <div className="group w-2/5 border-t pt-5 transition-all duration-300 first:border-none last:border-b last:pb-5">
+      <div className="flex items-center justify-between gap-2">
+        <h1 className="pl-2 text-2xl transition-all duration-300 group-hover:font-medium">
+          {title}
+        </h1>
+        <ArrowRight className="max-w-0 transition-all duration-300 group-hover:max-w-10" />
       </div>
-      <p className="mt-5">{description}</p>
+      <div className="absolute top-0 right-0 max-h-0 max-w-1/2 overflow-hidden transition-all duration-500 ease-in-out group-hover:max-h-96">
+        {image && (
+          <div>
+            <Image
+              src={image}
+              alt={title}
+              width={500}
+              height={300}
+              className="mb-4 rounded-lg object-cover"
+            />
+            <p className="text-gray-600">{description}</p>
+          </div>
+        )}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

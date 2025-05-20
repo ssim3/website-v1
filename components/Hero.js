@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import LineDraw from "@/components/LineDraw";
+import LineDraw from "@/animations/LineDraw";
 import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";

@@ -1,20 +1,18 @@
-import LineDraw from "@/components/LineDraw";
+import LineDraw from "@/animations/LineDraw";
 import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import Hero from "@/components/Hero"
+import Hero from "@/components/Hero";
 import Experience from "@/components/Experience";
 import Stack from "@/components/Stack";
 import Contact from "@/components/Contact";
 import Project from "@/components/Project";
-
+import Talk from "@/animations/Talk";
 
 const Home = () => {
-
   return (
     <>
       <div className="m-auto mb-50 flex max-w-5xl flex-col gap-50 px-10">
-
         <Hero />
 
         <div className="m-auto flex max-w-3xl flex-col gap-5 border-l-4 border-l-[#666663] p-5">
@@ -49,11 +47,11 @@ const Home = () => {
         </section>
 
         <section>
-          <h1 className="text-4xl">Projects</h1>
+          <h1 className="text-4xl">Featured Works</h1>
           <Project />
         </section>
 
-        <section className="flex flex-wrap items-center justify-between gap-20">
+        <section className="relative flex flex-wrap items-center justify-between gap-20">
           <div className="flex flex-1 flex-col gap-5">
             <h1 className="text-4xl font-bold text-[var(--main)]">
               Let's Talk!
@@ -63,11 +61,12 @@ const Home = () => {
               eiusmod tempor o eiusmod tempor o eiusmod tempor.
             </p>
           </div>
+          <Talk />
           <Contact />
         </section>
       </div>
     </>
   );
-}
+};
 
 export default Home;

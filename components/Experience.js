@@ -1,6 +1,8 @@
 import { ArrowRight, CircleArrowRight } from "lucide-react";
 import React from "react";
-import LineDraw from "./LineDraw";
+import LineDraw from "../animations/LineDraw";
+import Image from "next/image";
+import Suitcase from "@/animations/Suitcase";
 
 const Experience = () => {
   const experiences = [
@@ -38,6 +40,7 @@ const Experience = () => {
             </div>
           </div>
         ))}
+        <Suitcase />
       </div>
     </>
   );
