@@ -4,7 +4,7 @@ import { client } from "@/sanity/lib/client";
 import { PROJECTS_QUERY } from "@/sanity/queries";
 import ProjectCard from "./ProjectCard";
 import Image from "next/image";
-import Hand from "@/animations/Hand";
+import Hand from "@/svg/Hand";
 
 const options = { next: { revalidate: 30 } };
 

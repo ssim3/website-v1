@@ -1,4 +1,4 @@
-import LineDraw from "@/animations/LineDraw";
+import LineDraw from "@/svg/LineDraw";
 import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";

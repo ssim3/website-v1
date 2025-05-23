@@ -23,7 +23,7 @@ const ProjectCard = (props) => {
               height={300}
               className="mb-4 rounded-lg object-cover"
             />
-            <p className="text-gray-600">{description}</p>
+            <p className="m-auto text-center">{description}</p>
           </div>
         )}
       </div>

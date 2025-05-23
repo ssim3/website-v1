@@ -1,5 +1,30 @@
 const stacks = [
   {
+    name: "Languages",
+    details: [
+      {
+        name: "Javascript",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      },
+      {
+        name: "Typescript",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      },
+      {
+        name: "Python",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+      },
+      {
+        name: "C#",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
+      },
+    ],
+  },
+  {
     name: "Frontend",
     details: [
       {
@@ -11,16 +36,6 @@ const stacks = [
         name: "CSS",
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-      },
-      {
-        name: "Javascript",
-        image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-      },
-      {
-        name: "Typescript",
-        image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
       },
       {
         name: "React",
@@ -83,11 +98,6 @@ const stacks = [
   {
     name: "AI/ML",
     details: [
-      {
-        name: "Python",
-        image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-      },
       { name: "Xarray", image: "/techstack/xarray.png" },
       {
         name: "Pandas",
@@ -129,11 +139,6 @@ const stacks = [
   {
     name: "Game",
     details: [
-      {
-        name: "C#",
-        image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
-      },
       {
         name: "Unity",
         image:
