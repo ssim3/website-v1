@@ -7,7 +7,6 @@ import Experience from "@/components/Experience";
 import Stack from "@/components/Stack";
 import Contact from "@/components/Contact";
 import Project from "@/components/Project";
-import Talk from "@/animations/Talk";
 
 const Home = () => {
   return (
@@ -53,15 +52,16 @@ const Home = () => {
 
         <section className="relative flex flex-wrap items-center justify-between gap-20">
           <div className="flex flex-1 flex-col gap-5">
-            <h1 className="text-4xl font-bold text-[var(--main)]">
-              Let's Talk!
-            </h1>
+            <div className="flex items-center justify-start gap-5">
+              <h1 className="text-4xl font-bold text-[var(--main)]">
+                Let's Talk!
+              </h1>
+            </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor o eiusmod tempor o eiusmod tempor.
             </p>
           </div>
-          <Talk />
           <Contact />
         </section>
       </div>

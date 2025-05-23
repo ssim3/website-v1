@@ -1,5 +1,7 @@
+"use client";
+
 import { ArrowRight, CircleArrowRight } from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
 import LineDraw from "../animations/LineDraw";
 import Image from "next/image";
 import Suitcase from "@/animations/Suitcase";
@@ -10,18 +12,32 @@ const Experience = () => {
       name: "National Environmental Agency",
       role: "Data Science Intern",
       period: "Feb 2025 - May 2025",
+      description: `
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor o eiusmod tempor o eiusmod tempor.
+      `,
     },
     {
       name: "ApplyForChina",
       role: "Digital Strategist Intern",
       period: "Sep 2024 - Feb 2025",
+      description: `
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor o eiusmod tempor o eiusmod tempor.
+      `,
     },
     {
       name: "Sustainable Living Lab",
       role: "AI Trainer",
       period: "Apr 2024 - Sep 2024",
+      description: `
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor o eiusmod tempor o eiusmod tempor.
+      `,
     },
   ];
+
+  // TODO: Implement pictures and actually write the description for each experience.
 
   return (
     <>
@@ -33,10 +49,12 @@ const Experience = () => {
               <h3 className="text-2xl">{experience.name}</h3>
               <p>{experience.period}</p>
             </div>
-            <div>
-              <button className="cursor-pointer rounded-full duration-150 hover:bg-[var(--main)]">
-                <CircleArrowRight size={20} />
-              </button>
+            <div className="group">
+              <CircleArrowRight className="cursor-pointer rounded-full duration-150 group-hover:bg-[var(--main)]" size={20} />
+              <div className="absolute top-0 right-0 flex max-w-1/2 flex-col gap-2 rounded-3xl border bg-[var(--background)] p-5 opacity-0 transition-all duration-300 group-hover:opacity-100">
+                <h4 className="text-xl">{experience.name}</h4>
+                <p>{experience.description}</p>
+              </div>
             </div>
           </div>
         ))}

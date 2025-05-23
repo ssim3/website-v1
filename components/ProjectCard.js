@@ -13,7 +13,7 @@ const ProjectCard = (props) => {
         </h1>
         <ArrowRight className="max-w-0 transition-all duration-300 group-hover:max-w-10" />
       </div>
-      <div className="absolute top-0 right-0 max-h-0 max-w-1/2 overflow-hidden transition-all duration-500 ease-in-out group-hover:max-h-96">
+      <div className="absolute top-0 right-0 max-h-96 max-w-1/2 overflow-hidden opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100">
         {image && (
           <div>
             <Image
