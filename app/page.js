@@ -50,7 +50,10 @@ const Home = () => {
           <Project />
         </section>
 
-        <section className="relative flex flex-wrap items-center justify-between gap-20">
+        <section
+          id="contact"
+          className="relative flex items-center justify-between gap-20 max-sm:flex-col"
+        >
           <div className="flex flex-1 flex-col gap-5">
             <div className="flex items-center justify-start gap-5">
               <h1 className="text-4xl font-bold text-[var(--main)]">

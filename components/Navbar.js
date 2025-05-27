@@ -6,7 +6,7 @@ const Navbar = () => {
   const navItems = [
     { name: "Resume", link: "/resume" },
     { name: "Projects", link: "/projects" },
-    { name: "Contact", link: "/contact" },
+    { name: "Contact", link: "#contact" },
   ];
 
   return (
@@ -18,6 +18,7 @@ const Navbar = () => {
         {navItems.map((navItem, index) => (
           <li key={index}>
             <Link
+              scroll={true}
               className="group transition-all duration-300 hover:font-medium"
               href={navItem.link}
             >

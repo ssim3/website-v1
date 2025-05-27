@@ -16,7 +16,7 @@ const Suitcase = () => {
   });
 
   return (
-    <div className={`absolute top-1/2 right-0 -z-100`}>
+    <div className={`absolute top-1/2 right-0 -z-100 max-sm:hidden`}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         version="1.0"

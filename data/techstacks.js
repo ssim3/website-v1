@@ -22,6 +22,11 @@ const stacks = [
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
       },
+      {
+        name: "C++",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+      },
     ],
   },
   {
@@ -143,6 +148,11 @@ const stacks = [
         name: "Unity",
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg",
+      },
+      {
+        name: "Unreal Engine",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unrealengine/unrealengine-original.svg",
       },
     ],
   },

@@ -31,7 +31,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="flex-1">
+    <div className="w-full flex-1">
       <form id="form" className="flex flex-col gap-10" onSubmit={handleSubmit}>
         <div className="flex flex-col gap-2">
           <label className="text-sm" htmlFor="name">

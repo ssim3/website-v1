@@ -16,7 +16,7 @@ const Hand = () => {
   });
 
   return (
-    <div className={`absolute top-1/2 right-0 -z-100`}>
+    <div className={`absolute top-1/2 right-0 -z-100 max-sm:hidden`}>
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"

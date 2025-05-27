@@ -54,10 +54,10 @@ const Experience = () => {
           </div>
           <div className="group">
             <CircleArrowRight
-              className="rounded-full duration-150 group-hover:bg-[var(--main)]"
+              className="rounded-full duration-150 group-hover:bg-[var(--main)] max-sm:hidden"
               size={20}
             />
-            <div className="absolute top-1/2 right-0 flex max-w-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-3xl border bg-[var(--background)] opacity-0 transition-all duration-300 group-hover:opacity-100">
+            <div className="absolute top-1/2 right-0 flex max-w-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-3xl border bg-[var(--background)] opacity-0 transition-all duration-300 group-hover:opacity-100 max-sm:hidden">
               <img
                 src={experience.cover}
                 alt={experience.name}
@@ -76,7 +76,7 @@ const Experience = () => {
           </div>
         </div>
       ))}
-      <Suitcase />
+      <Suitcase className="max-sm:hidden" />
     </div>
   );
 };
