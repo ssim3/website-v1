@@ -26,7 +26,7 @@ const Excerpt = () => {
         Hi everyone, thanks for caring enough to visit my site! I&apos;m a student developer based in Singapore, just trying to keep up with the latest tech that seems to drop every other week.
       </p>
       <p>
-        My "passion" for technology started when I was a kid. I was a pretty materialistic one—always drawn to the latest smartphones, tablets, and especially <b>gaming consoles</b>. 
+        My &quot;passion&quot; for technology started when I was a kid. I was a pretty materialistic one—always drawn to the latest smartphones, tablets, and especially <b>gaming consoles</b>. 
       </p>
       <p>
         <span className='font-bold italic text-[var(--main)]'>New RTX series from NVIDIA?</span> Mind blown. <span className='font-bold italic text-[var(--main)]'>ROG ALLY X?</span> Shut up and take my money.
