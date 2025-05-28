@@ -26,7 +26,7 @@ const Contact = () => {
       var form = document.getElementById("form");
       form.reset();
 
-      toast("Mwahahahha I have your personal details now! Just kidding.");
+      toast("Mwahahaha I have your personal details now! Just kidding.");
     }
   }
 

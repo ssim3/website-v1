@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <footer className="flex bg-[#333] px-20 py-10">
       <div className="flex flex-col gap-5 text-[var(--background)]">
-        <p>Thanks for visiting my site! Check out other platforms I'm on:</p>
+        <p>Thanks for visiting my site! Check out other platforms I&apos;m on:</p>
         <div className="flex gap-5">
           {socials.map((social, index) => (
             <Link key={index} href={social.link}>
@@ -32,7 +32,7 @@ const Footer = () => {
             </Link>
           ))}
         </div>
-        <p>This site was inspired by <Link href="https://www.anthropic.com/" className="font-bold italic hover:underline text-[var(--main)]">Anthropic’s website</Link>—you probably know who they are. See the source code <Link href="https://github.com/ssim3/website-v1" className="font-bold italic hover:underline text-[var(--main)]">here</Link>!</p>
+        <p>This site was inspired by <Link href="https://www.anthropic.com/" className="font-bold italic hover:underline text-[var(--main)]">Anthropic&apos;s website</Link>—you probably know who they are. See the source code <Link href="https://github.com/ssim3/website-v1" className="font-bold italic hover:underline text-[var(--main)]">here</Link>!</p>
       </div>
     </footer>
   );

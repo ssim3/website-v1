@@ -36,11 +36,11 @@ const Home = () => {
           <div className="flex flex-1 flex-col gap-5">
             <div className="flex items-center justify-start gap-5">
               <h1 className="text-4xl font-bold text-[var(--main)]">
-                Let's Talk!
+                Let&apos;s Talk!
               </h1>
             </div>
             <p>
-              A friend once told me I talk too much—maybe they're right. But if you're someone who loves geeking out about tech or just wants to have a chat, trust me, I've got plenty of words to throw your way.
+              A friend once told me I talk too much—maybe they&apos;re right. But if you&apos;re someone who loves geeking out about tech or just wants to have a chat, I&apos;ve got plenty of words to throw your way.
             </p>
           </div>
           <Contact />

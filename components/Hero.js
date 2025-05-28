@@ -23,7 +23,7 @@ const Hero = () => {
       className="mt-30 flex items-center justify-center gap-20 max-sm:flex-col-reverse max-sm:gap-10"
     >
       <div className="flex flex-1 flex-col gap-2.5">
-        <h1 className="text-6xl">Hi, I'm Tristan</h1>
+        <h1 className="text-6xl">Hi, I&apos;m Tristan</h1>
         <p>
           I build tech solutions to tackle the everyday problems I face—and learn a lot along the way.
         </p>
