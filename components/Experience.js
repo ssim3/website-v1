@@ -76,7 +76,7 @@ const Experience = () => {
           </div>
         </div>
       ))}
-      <Suitcase className="max-sm:hidden" />
+      <Suitcase />
     </div>
   );
 };

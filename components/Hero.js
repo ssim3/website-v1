@@ -20,7 +20,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="mt-30 flex items-center justify-center gap-20 max-sm:flex-col-reverse max-sm:gap-5"
+      className="mt-30 flex items-center justify-center gap-20 max-sm:flex-col-reverse max-sm:gap-10"
     >
       <div className="flex flex-1 flex-col gap-2.5">
         <h1 className="text-6xl">Hi, I'm Tristan</h1>
@@ -29,8 +29,8 @@ const Hero = () => {
           eiusmod tempor o eiusmod tempor o eiusmod tempor.
         </p>
       </div>
-      <div className="relative aspect-[527/457] flex-1">
-        <Image src="/Hero.png" fill={true} alt="Hero Image" />
+      <div className="relative flex-1">
+        <Image src="/Hero.png" width={527} height={427} alt="Hero Image" />
       </div>
       <LineDraw />
     </section>

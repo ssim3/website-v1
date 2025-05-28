@@ -45,7 +45,7 @@ const Home = () => {
           <Stack />
         </section>
 
-        <section>
+        <section id="projects">
           <h1 className="text-4xl">Featured Works</h1>
           <Project />
         </section>
