@@ -25,8 +25,7 @@ const Hero = () => {
       <div className="flex flex-1 flex-col gap-2.5">
         <h1 className="text-6xl">Hi, I'm Tristan</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor o eiusmod tempor o eiusmod tempor.
+          I build tech solutions to tackle the everyday problems I face—and learn a lot along the way.
         </p>
       </div>
       <div className="relative flex-1">

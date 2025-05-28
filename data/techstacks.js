@@ -103,7 +103,6 @@ const stacks = [
   {
     name: "AI/ML",
     details: [
-      { name: "Xarray", image: "/techstack/xarray.png" },
       {
         name: "Pandas",
         image:
@@ -113,11 +112,6 @@ const stacks = [
         name: "Matplotlib",
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg",
-      },
-      {
-        name: "Plotly",
-        image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/plotly/plotly-original.svg",
       },
       {
         name: "Sci-Kit Learn",

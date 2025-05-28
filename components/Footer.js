@@ -32,6 +32,7 @@ const Footer = () => {
             </Link>
           ))}
         </div>
+        <p>This site was inspired by <Link href="https://www.anthropic.com/" className="font-bold italic hover:underline text-[var(--main)]">Anthropic’s website</Link>—you probably know who they are. See the source code <Link href="https://github.com/ssim3/website-v1" className="font-bold italic hover:underline text-[var(--main)]">here</Link>!</p>
       </div>
     </footer>
   );

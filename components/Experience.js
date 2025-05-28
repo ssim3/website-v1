@@ -1,8 +1,13 @@
 "use client";
 
 import { CircleArrowRight } from "lucide-react";
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Suitcase from "@/svg/Suitcase";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
 
 const Experience = () => {
   const experiences = [
@@ -41,12 +46,30 @@ const Experience = () => {
     },
   ];
 
-  // TODO: Implement pictures and actually write the description for each experience.
+  const experienceRefs = useRef([]);
+
+  useEffect(() => {
+    experienceRefs.current.forEach((el, index) => {
+      gsap.from(el, {
+        opacity: 0,
+        y: 50,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+        delay: index * 0.1,
+      });
+    });
+  }, []);
+
 
   return (
     <div className="relative m-10 flex flex-col gap-15 border-l-2 p-5 pb-20 before:absolute before:top-0 before:left-[-6.5px] before:h-3 before:w-3 before:rounded-full before:bg-[#CC785C] before:content-['']">
       {experiences.map((experience, index) => (
-        <div key={index} className="relative flex items-center gap-10 p-5">
+        <div key={index} className="relative flex items-center gap-10 p-5" ref={(el) => (experienceRefs.current[index] = el)}>
           <div className="flex flex-col gap-2 text-sm">
             <p>{experience.role}</p>
             <h3 className="text-2xl">{experience.name}</h3>
