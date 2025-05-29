@@ -3,7 +3,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 import { League_Spartan } from "next/font/google";
-
+ 
+// Main Font
 const leagueSpartan = League_Spartan({
   variable: "--font-league-spartan",
   subsets: ["latin"],

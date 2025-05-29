@@ -23,7 +23,7 @@ const Excerpt = () => {
   return (
     <div id="excerpt" className="m-auto flex max-w-3xl flex-col gap-5 border-l-4 border-l-[#666663] p-5">
       <p>
-        Hi everyone, thanks for caring enough to visit my site! I&apos;m a student developer based in Singapore, just trying to keep up with the latest tech that seems to drop every other week.
+        Hi everyone, welcome to my personal website! I&apos;m a student developer based in Singapore, just trying to keep up with the latest tech that seems to drop every other week.
       </p>
       <p>
         My &quot;passion&quot; for technology started when I was a kid. I was a pretty materialistic one—always drawn to the latest smartphones, tablets, and especially <b>gaming consoles</b>. 
