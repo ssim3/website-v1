@@ -29,23 +29,6 @@ const fontClasses = [
 const Hero = () => {
 
   const [fontIndex, setFontIndex] = useState(0)
-  const el = useRef(null);
-
-  // Typing effect
-  useEffect(() => {
-    const typed = new Typed(el.current, {
-      strings: ["Hi, I&apos;m Tristan", "Hi, I&apos;m Tristan", "Hi, I&apos;m Tristan", "Hi, I&apos;m Tristan"],
-      typeSpeed: 80,
-      backSpeed: 50,
-      backDelay: 0,
-      loop: true,
-      showCursor: false
-    });
-
-    return () => {
-      typed.destroy();
-    };
-  }, []);
 
   // Font switching effect
   useEffect(() => {
@@ -70,7 +53,7 @@ const Hero = () => {
       className="mt-30 flex items-center justify-center gap-20 max-sm:flex-col-reverse max-sm:gap-10"
     >
       <div className="flex flex-1 flex-col gap-2.5">
-        <h1 ref={el} className={`text-6xl ${fontClasses[fontIndex].className}`}></h1>
+        <h1 className={`text-6xl ${fontClasses[fontIndex].className}`}>Hi, I&apos;m Tristan</h1>
         <p>
           I build tech solutions to tackle the everyday problems I face—and learn a lot along the way.
         </p>
