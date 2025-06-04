@@ -4,8 +4,7 @@ import LineDraw from "@/svg/LineDraw";
 import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { useState, useEffect, useRef } from "react";
-import Typed from "typed.js";
+import { useState, useEffect } from "react";
 
 import { Roboto_Slab } from 'next/font/google'
 import { Playfair_Display } from 'next/font/google'
